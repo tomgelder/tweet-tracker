@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Tweets</title>
+	<link rel="stylesheet" href="jquery.mobile-1.3.2.min.css" />
+	<link rel="stylesheet" href="styles/custom.css" />
+	<script src="scripts/jquery-2.0.3.min.js"></script>
+	<script src="scripts/custom-scripts.js"></script>
+	<script src="scripts/jquery.mobile-1.3.2.min.js"></script>
+  <link rel="icon" type="image/png" href="icon.png">
+     <!--Creates a bookmark icon. Must be called "icon.png" and placed in the root -->
+  <link rel="images/icons/apple-touch-icon-precomposed" sizes="57x57" href="apple-touch-icon-57x57-precomposed.png" />
+	<link rel="images/icons/apple-touch-icon-precomposed" sizes="72x72" href="apple-touch-icon-72x72-precomposed.png" />
+	<link rel="images/icons/apple-touch-icon-precomposed" sizes="114x114" href="apple-touch-icon-114x114-precomposed.png" />
+	<link rel="images/icons/apple-touch-icon-precomposed" sizes="144x144" href="apple-touch-icon-144x144-precomposed.png" />
+		<!--Makes a homescreen icon when they create shortcuts or bookmarks-->
+</head>
+<body>
+  <!--==========MONDAY===========-->
+ <div data-role="page" id="mon">
+  <div data-role="header" data-theme="b">
+  	<div data-role="navbar">
+  		<ul id="day-bar">
+				<li><a href="#mon" class="active-day">MON</a></li>
+				<li><a href="#tues">Tues</a></li>
+				<li><a href="#weds">Wed</a></li>
+				<li><a href="#thurs">Thurs</a></li>
+				<li><a href="#fri">Fri</a></li>
+    	</ul>
+    </div><!--/Navbar-->
+  </div>
+  
+  <div data-role="content">
+  	<!--<h3>#SocialEnterprise</h3><fieldset data-role="controlgroup"><input name="checkbox-v-2a" id="checkbox-v-2a" type="checkbox"><label for="checkbox-v-2a">AM Tweet</label><input name="checkbox-v-2b" id="checkbox-v-2b" type="checkbox"><label for="checkbox-v-2b">PM Tweet</label></fieldset>
+			
+    <h3>#SocEnt</h3><fieldset data-role="controlgroup"><input name="checkbox-v-2a" id="checkbox-v-2a" type="checkbox"><label for="checkbox-v-2a">AM Tweet</label><input name="checkbox-v-2b" id="checkbox-v-2b" type="checkbox"><label for="checkbox-v-2b">PM Tweet</label></fieldset>
+    
+    <h3>#Nonprofit</h3><fieldset data-role="controlgroup"><input name="checkbox-v-2a" id="checkbox-v-2a" type="checkbox"><label for="checkbox-v-2a">AM Tweet</label><input name="checkbox-v-2b" id="checkbox-v-2b" type="checkbox"><label for="checkbox-v-2b">PM Tweet</label></fieldset>
+			
+			
+		<h3>#NPTech</h3><fieldset data-role="controlgroup"><input name="checkbox-v-2a" id="checkbox-v-2a" type="checkbox"><label for="checkbox-v-2a">AM Tweet</label><input name="checkbox-v-2b" id="checkbox-v-2b" type="checkbox"><label for="checkbox-v-2b">PM Tweet</label></fieldset>
+		<h3>#SM4SG or #SM4NP</h3><fieldset data-role="controlgroup"><input name="checkbox-v-2a" id="checkbox-v-2a" type="checkbox"><label for="checkbox-v-2a">AM Tweet</label><input name="checkbox-v-2b" id="checkbox-v-2b" type="checkbox"><label for="checkbox-v-2b">PM Tweet</label></fieldset>
+			-->
+		
+		<div class="ui-grid-a">
+    <div class="ui-block-a"><div class="ui-bar"><h3>#SocialEnterprise</h3><fieldset data-role="controlgroup"><input name="checkbox-v-2a" id="checkbox-v-2a" type="checkbox"><label for="checkbox-v-2a">AM Tweet</label><input name="checkbox-v-2b" id="checkbox-v-2b" type="checkbox"><label for="checkbox-v-2b">PM Tweet</label></fieldset></div></div>
+    <div class="ui-block-b"><div class="ui-bar"><h3>#SocEnt</h3><fieldset data-role="controlgroup"><input name="checkbox-v-2a" id="checkbox-v-2a" type="checkbox"><label for="checkbox-v-2a">AM Tweet</label><input name="checkbox-v-2b" id="checkbox-v-2b" type="checkbox"><label for="checkbox-v-2b">PM Tweet</label></fieldset></div></div>
+    </div><!-- /grid-a -->
+
+		<div class="ui-grid-a">
+    <div class="ui-block-a"><div class="ui-bar"><h3>#Nonprofit</h3><fieldset data-role="controlgroup"><input name="checkbox-v-2a" id="checkbox-v-2a" type="checkbox"><label for="checkbox-v-2a">AM Tweet</label><input name="checkbox-v-2b" id="checkbox-v-2b" type="checkbox"><label for="checkbox-v-2b">PM Tweet</label></fieldset></div></div>
+    <div class="ui-block-b"><div class="ui-bar"><h3>#NPTech</h3><fieldset data-role="controlgroup"><input name="checkbox-v-2a" id="checkbox-v-2a" type="checkbox"><label for="checkbox-v-2a">AM Tweet</label><input name="checkbox-v-2b" id="checkbox-v-2b" type="checkbox"><label for="checkbox-v-2b">PM Tweet</label></fieldset></div></div>
+    </div><!-- /grid-a -->
+    
+    <div class="ui-grid-a">
+    <div class="ui-block-a"><div class="ui-bar"><h3>#SM4SG</h3><fieldset data-role="controlgroup"><input name="checkbox-v-2a" id="checkbox-v-2a" type="checkbox"><label for="checkbox-v-2a">AM Tweet</label><input name="checkbox-v-2b" id="checkbox-v-2b" type="checkbox"><label for="checkbox-v-2b">PM Tweet</label></fieldset></div></div>
+    <div class="ui-block-b"><div class="ui-bar"><h3>Other</h3><fieldset data-role="controlgroup"><input name="checkbox-v-2a" id="checkbox-v-2a" type="checkbox"><label for="checkbox-v-2a">AM Tweet</label><input name="checkbox-v-2b" id="checkbox-v-2b" type="checkbox"><label for="checkbox-v-2b">PM Tweet</label></fieldset></div></div>
+    </div><!-- /grid-a -->
+		
+		
+			
+			
+  <label for="slider-fill-mini">Retweets</label>
+<input name="slider-fill-mini" id="slider-fill-mini" value="0" min="0" max="5" data-mini="true" data-highlight="true" data-theme="b" data-track-theme="d" type="range"> 
+ <label for="textarea">Notes:</label>
+<textarea rows="20" name="textarea" id="textarea"></textarea>
+  
+  </div>
+</div> <!--/page -->
+
+<!--==========TUESDAY===========-->
+ <div data-role="page" id="tues">
+  <div data-role="header" data-theme="b">
+  	<div data-role="navbar">
+  		<ul id="day-bar">
+				<li><a href="#mon">Mon</a></li>
+				<li><a href="#tues" class="active-day">TUES</a></li>
+				<li><a href="#weds">Wed</a></li>
+				<li><a href="#thurs">Thurs</a></li>
+				<li><a href="#fri">Fri</a></li>
+    	</ul>
+    </div><!--/Navbar-->
+  </div>
+  
+  <div data-role="content">
+  	<!--<h3>#SocialEnterprise</h3><fieldset data-role="controlgroup"><input name="checkbox-v-2a" id="checkbox-v-2a" type="checkbox"><label for="checkbox-v-2a">AM Tweet</label><input name="checkbox-v-2b" id="checkbox-v-2b" type="checkbox"><label for="checkbox-v-2b">PM Tweet</label></fieldset>
+			
+    <h3>#SocEnt</h3><fieldset data-role="controlgroup"><input name="checkbox-v-2a" id="checkbox-v-2a" type="checkbox"><label for="checkbox-v-2a">AM Tweet</label><input name="checkbox-v-2b" id="checkbox-v-2b" type="checkbox"><label for="checkbox-v-2b">PM Tweet</label></fieldset>
+    
+    <h3>#Nonprofit</h3><fieldset data-role="controlgroup"><input name="checkbox-v-2a" id="checkbox-v-2a" type="checkbox"><label for="checkbox-v-2a">AM Tweet</label><input name="checkbox-v-2b" id="checkbox-v-2b" type="checkbox"><label for="checkbox-v-2b">PM Tweet</label></fieldset>
+			
+			
+		<h3>#NPTech</h3><fieldset data-role="controlgroup"><input name="checkbox-v-2a" id="checkbox-v-2a" type="checkbox"><label for="checkbox-v-2a">AM Tweet</label><input name="checkbox-v-2b" id="checkbox-v-2b" type="checkbox"><label for="checkbox-v-2b">PM Tweet</label></fieldset>
+		<h3>#SM4SG or #SM4NP</h3><fieldset data-role="controlgroup"><input name="checkbox-v-2a" id="checkbox-v-2a" type="checkbox"><label for="checkbox-v-2a">AM Tweet</label><input name="checkbox-v-2b" id="checkbox-v-2b" type="checkbox"><label for="checkbox-v-2b">PM Tweet</label></fieldset>
+			-->
+		
+		<div class="ui-grid-a">
+    <div class="ui-block-a"><div class="ui-bar"><h3>#SocialEnterprise</h3><fieldset data-role="controlgroup"><input name="checkbox-v-2a" id="checkbox-v-2a" type="checkbox"><label for="checkbox-v-2a">AM Tweet</label><input name="checkbox-v-2b" id="checkbox-v-2b" type="checkbox"><label for="checkbox-v-2b">PM Tweet</label></fieldset></div></div>
+    <div class="ui-block-b"><div class="ui-bar"><h3>#SocEnt</h3><fieldset data-role="controlgroup"><input name="checkbox-v-2a" id="checkbox-v-2a" type="checkbox"><label for="checkbox-v-2a">AM Tweet</label><input name="checkbox-v-2b" id="checkbox-v-2b" type="checkbox"><label for="checkbox-v-2b">PM Tweet</label></fieldset></div></div>
+    </div><!-- /grid-a -->
+
+		<div class="ui-grid-a">
+    <div class="ui-block-a"><div class="ui-bar"><h3>#Nonprofit</h3><fieldset data-role="controlgroup"><input name="checkbox-v-2a" id="checkbox-v-2a" type="checkbox"><label for="checkbox-v-2a">AM Tweet</label><input name="checkbox-v-2b" id="checkbox-v-2b" type="checkbox"><label for="checkbox-v-2b">PM Tweet</label></fieldset></div></div>
+    <div class="ui-block-b"><div class="ui-bar"><h3>#NPTech</h3><fieldset data-role="controlgroup"><input name="checkbox-v-2a" id="checkbox-v-2a" type="checkbox"><label for="checkbox-v-2a">AM Tweet</label><input name="checkbox-v-2b" id="checkbox-v-2b" type="checkbox"><label for="checkbox-v-2b">PM Tweet</label></fieldset></div></div>
+    </div><!-- /grid-a -->
+    
+    <div class="ui-grid-a">
+    <div class="ui-block-a"><div class="ui-bar"><h3>#SM4SG</h3><fieldset data-role="controlgroup"><input name="checkbox-v-2a" id="checkbox-v-2a" type="checkbox"><label for="checkbox-v-2a">AM Tweet</label><input name="checkbox-v-2b" id="checkbox-v-2b" type="checkbox"><label for="checkbox-v-2b">PM Tweet</label></fieldset></div></div>
+    <div class="ui-block-b"><div class="ui-bar"><h3>Other</h3><fieldset data-role="controlgroup"><input name="checkbox-v-2a" id="checkbox-v-2a" type="checkbox"><label for="checkbox-v-2a">AM Tweet</label><input name="checkbox-v-2b" id="checkbox-v-2b" type="checkbox"><label for="checkbox-v-2b">PM Tweet</label></fieldset></div></div>
+    </div><!-- /grid-a -->
+		
+		
+			
+			
+  <label for="slider-fill-mini">Retweets</label>
+<input name="slider-fill-mini" id="slider-fill-mini" value="0" min="0" max="5" data-mini="true" data-highlight="true" data-theme="b" data-track-theme="d" type="range"> 
+ <label for="textarea">Notes:</label>
+<textarea rows="20" name="textarea" id="textarea"></textarea>
+  
+  </div>
+</div> <!--/page -->
+
+<!--==========WEDNESDAY===========-->
+ <div data-role="page" id="weds">
+  <div data-role="header" data-theme="b">
+  	<div data-role="navbar">
+  		<ul id="day-bar">
+				<li><a href="#mon">Mon</a></li>
+				<li><a href="#tues">Tues</a></li>
+				<li><a href="#weds" class="active-day">WED</a></li>
+				<li><a href="#thurs">Thurs</a></li>
+				<li><a href="#fri">Fri</a></li>
+    	</ul>
+    </div><!--/Navbar-->
+  </div>
+  
+  <div data-role="content">
+  	<!--<h3>#SocialEnterprise</h3><fieldset data-role="controlgroup"><input name="checkbox-v-2a" id="checkbox-v-2a" type="checkbox"><label for="checkbox-v-2a">AM Tweet</label><input name="checkbox-v-2b" id="checkbox-v-2b" type="checkbox"><label for="checkbox-v-2b">PM Tweet</label></fieldset>
+			
+    <h3>#SocEnt</h3><fieldset data-role="controlgroup"><input name="checkbox-v-2a" id="checkbox-v-2a" type="checkbox"><label for="checkbox-v-2a">AM Tweet</label><input name="checkbox-v-2b" id="checkbox-v-2b" type="checkbox"><label for="checkbox-v-2b">PM Tweet</label></fieldset>
+    
+    <h3>#Nonprofit</h3><fieldset data-role="controlgroup"><input name="checkbox-v-2a" id="checkbox-v-2a" type="checkbox"><label for="checkbox-v-2a">AM Tweet</label><input name="checkbox-v-2b" id="checkbox-v-2b" type="checkbox"><label for="checkbox-v-2b">PM Tweet</label></fieldset>
+			
+			
+		<h3>#NPTech</h3><fieldset data-role="controlgroup"><input name="checkbox-v-2a" id="checkbox-v-2a" type="checkbox"><label for="checkbox-v-2a">AM Tweet</label><input name="checkbox-v-2b" id="checkbox-v-2b" type="checkbox"><label for="checkbox-v-2b">PM Tweet</label></fieldset>
+		<h3>#SM4SG or #SM4NP</h3><fieldset data-role="controlgroup"><input name="checkbox-v-2a" id="checkbox-v-2a" type="checkbox"><label for="checkbox-v-2a">AM Tweet</label><input name="checkbox-v-2b" id="checkbox-v-2b" type="checkbox"><label for="checkbox-v-2b">PM Tweet</label></fieldset>
+			-->
+		
+		<div class="ui-grid-a">
+    <div class="ui-block-a"><div class="ui-bar"><h3>#SocialEnterprise</h3><fieldset data-role="controlgroup"><input name="checkbox-v-2a" id="checkbox-v-2a" type="checkbox"><label for="checkbox-v-2a">AM Tweet</label><input name="checkbox-v-2b" id="checkbox-v-2b" type="checkbox"><label for="checkbox-v-2b">PM Tweet</label></fieldset></div></div>
+    <div class="ui-block-b"><div class="ui-bar"><h3>#SocEnt</h3><fieldset data-role="controlgroup"><input name="checkbox-v-2a" id="checkbox-v-2a" type="checkbox"><label for="checkbox-v-2a">AM Tweet</label><input name="checkbox-v-2b" id="checkbox-v-2b" type="checkbox"><label for="checkbox-v-2b">PM Tweet</label></fieldset></div></div>
+    </div><!-- /grid-a -->
+
+		<div class="ui-grid-a">
+    <div class="ui-block-a"><div class="ui-bar"><h3>#Nonprofit</h3><fieldset data-role="controlgroup"><input name="checkbox-v-2a" id="checkbox-v-2a" type="checkbox"><label for="checkbox-v-2a">AM Tweet</label><input name="checkbox-v-2b" id="checkbox-v-2b" type="checkbox"><label for="checkbox-v-2b">PM Tweet</label></fieldset></div></div>
+    <div class="ui-block-b"><div class="ui-bar"><h3>#NPTech</h3><fieldset data-role="controlgroup"><input name="checkbox-v-2a" id="checkbox-v-2a" type="checkbox"><label for="checkbox-v-2a">AM Tweet</label><input name="checkbox-v-2b" id="checkbox-v-2b" type="checkbox"><label for="checkbox-v-2b">PM Tweet</label></fieldset></div></div>
+    </div><!-- /grid-a -->
+    
+    <div class="ui-grid-a">
+    <div class="ui-block-a"><div class="ui-bar"><h3>#SM4SG</h3><fieldset data-role="controlgroup"><input name="checkbox-v-2a" id="checkbox-v-2a" type="checkbox"><label for="checkbox-v-2a">AM Tweet</label><input name="checkbox-v-2b" id="checkbox-v-2b" type="checkbox"><label for="checkbox-v-2b">PM Tweet</label></fieldset></div></div>
+    <div class="ui-block-b"><div class="ui-bar"><h3>Other</h3><fieldset data-role="controlgroup"><input name="checkbox-v-2a" id="checkbox-v-2a" type="checkbox"><label for="checkbox-v-2a">AM Tweet</label><input name="checkbox-v-2b" id="checkbox-v-2b" type="checkbox"><label for="checkbox-v-2b">PM Tweet</label></fieldset></div></div>
+    </div><!-- /grid-a -->
+		
+		
+			
+			
+  <label for="slider-fill-mini">Retweets</label>
+<input name="slider-fill-mini" id="slider-fill-mini" value="0" min="0" max="5" data-mini="true" data-highlight="true" data-theme="b" data-track-theme="d" type="range"> 
+ <label for="textarea">Notes:</label>
+<textarea rows="20" name="textarea" id="textarea"></textarea>
+  
+  </div>
+</div> <!--/page -->
+
+<!--==========THURSDAY===========-->
+ <div data-role="page" id="thurs">
+  <div data-role="header" data-theme="b">
+  	<div data-role="navbar">
+  		<ul id="day-bar">
+				<li><a href="#mon">Mon</a></li>
+				<li><a href="#tues">Tues</a></li>
+				<li><a href="#weds">Wed</a></li>
+				<li><a href="#thurs" class="active-day">THURS</a></li>
+				<li><a href="#fri">Fri</a></li>
+    	</ul>
+    </div><!--/Navbar-->
+  </div>
+  
+  <div data-role="content">
+  	<!--<h3>#SocialEnterprise</h3><fieldset data-role="controlgroup"><input name="checkbox-v-2a" id="checkbox-v-2a" type="checkbox"><label for="checkbox-v-2a">AM Tweet</label><input name="checkbox-v-2b" id="checkbox-v-2b" type="checkbox"><label for="checkbox-v-2b">PM Tweet</label></fieldset>
+			
+    <h3>#SocEnt</h3><fieldset data-role="controlgroup"><input name="checkbox-v-2a" id="checkbox-v-2a" type="checkbox"><label for="checkbox-v-2a">AM Tweet</label><input name="checkbox-v-2b" id="checkbox-v-2b" type="checkbox"><label for="checkbox-v-2b">PM Tweet</label></fieldset>
+    
+    <h3>#Nonprofit</h3><fieldset data-role="controlgroup"><input name="checkbox-v-2a" id="checkbox-v-2a" type="checkbox"><label for="checkbox-v-2a">AM Tweet</label><input name="checkbox-v-2b" id="checkbox-v-2b" type="checkbox"><label for="checkbox-v-2b">PM Tweet</label></fieldset>
+			
+			
+		<h3>#NPTech</h3><fieldset data-role="controlgroup"><input name="checkbox-v-2a" id="checkbox-v-2a" type="checkbox"><label for="checkbox-v-2a">AM Tweet</label><input name="checkbox-v-2b" id="checkbox-v-2b" type="checkbox"><label for="checkbox-v-2b">PM Tweet</label></fieldset>
+		<h3>#SM4SG or #SM4NP</h3><fieldset data-role="controlgroup"><input name="checkbox-v-2a" id="checkbox-v-2a" type="checkbox"><label for="checkbox-v-2a">AM Tweet</label><input name="checkbox-v-2b" id="checkbox-v-2b" type="checkbox"><label for="checkbox-v-2b">PM Tweet</label></fieldset>
+			-->
+		
+		<div class="ui-grid-a">
+    <div class="ui-block-a"><div class="ui-bar"><h3>#SocialEnterprise</h3><fieldset data-role="controlgroup"><input name="checkbox-v-2a" id="checkbox-v-2a" type="checkbox"><label for="checkbox-v-2a">AM Tweet</label><input name="checkbox-v-2b" id="checkbox-v-2b" type="checkbox"><label for="checkbox-v-2b">PM Tweet</label></fieldset></div></div>
+    <div class="ui-block-b"><div class="ui-bar"><h3>#SocEnt</h3><fieldset data-role="controlgroup"><input name="checkbox-v-2a" id="checkbox-v-2a" type="checkbox"><label for="checkbox-v-2a">AM Tweet</label><input name="checkbox-v-2b" id="checkbox-v-2b" type="checkbox"><label for="checkbox-v-2b">PM Tweet</label></fieldset></div></div>
+    </div><!-- /grid-a -->
+
+		<div class="ui-grid-a">
+    <div class="ui-block-a"><div class="ui-bar"><h3>#Nonprofit</h3><fieldset data-role="controlgroup"><input name="checkbox-v-2a" id="checkbox-v-2a" type="checkbox"><label for="checkbox-v-2a">AM Tweet</label><input name="checkbox-v-2b" id="checkbox-v-2b" type="checkbox"><label for="checkbox-v-2b">PM Tweet</label></fieldset></div></div>
+    <div class="ui-block-b"><div class="ui-bar"><h3>#NPTech</h3><fieldset data-role="controlgroup"><input name="checkbox-v-2a" id="checkbox-v-2a" type="checkbox"><label for="checkbox-v-2a">AM Tweet</label><input name="checkbox-v-2b" id="checkbox-v-2b" type="checkbox"><label for="checkbox-v-2b">PM Tweet</label></fieldset></div></div>
+    </div><!-- /grid-a -->
+    
+    <div class="ui-grid-a">
+    <div class="ui-block-a"><div class="ui-bar"><h3>#SM4SG</h3><fieldset data-role="controlgroup"><input name="checkbox-v-2a" id="checkbox-v-2a" type="checkbox"><label for="checkbox-v-2a">AM Tweet</label><input name="checkbox-v-2b" id="checkbox-v-2b" type="checkbox"><label for="checkbox-v-2b">PM Tweet</label></fieldset></div></div>
+    <div class="ui-block-b"><div class="ui-bar"><h3>Other</h3><fieldset data-role="controlgroup"><input name="checkbox-v-2a" id="checkbox-v-2a" type="checkbox"><label for="checkbox-v-2a">AM Tweet</label><input name="checkbox-v-2b" id="checkbox-v-2b" type="checkbox"><label for="checkbox-v-2b">PM Tweet</label></fieldset></div></div>
+    </div><!-- /grid-a -->
+		
+		
+			
+			
+  <label for="slider-fill-mini">Retweets</label>
+<input name="slider-fill-mini" id="slider-fill-mini" value="0" min="0" max="5" data-mini="true" data-highlight="true" data-theme="b" data-track-theme="d" type="range"> 
+ <label for="textarea">Notes:</label>
+<textarea rows="20" name="textarea" id="textarea"></textarea>
+  
+  </div>
+</div> <!--/page -->
+
+<!--==========FRIDAY===========-->
+ <div data-role="page" id="fri">
+  <div data-role="header" data-theme="b">
+  	<div data-role="navbar">
+  		<ul id="day-bar">
+				<li><a href="#mon">Mon</a></li>
+				<li><a href="#tues">Tues</a></li>
+				<li><a href="#weds">Wed</a></li>
+				<li><a href="#thurs">Thurs</a></li>
+				<li><a href="#fri" class="active-day">FRI</a></li>
+    	</ul>
+    </div><!--/Navbar-->
+  </div>
+  
+  <div data-role="content">
+  	<!--<h3>#SocialEnterprise</h3><fieldset data-role="controlgroup"><input name="checkbox-v-2a" id="checkbox-v-2a" type="checkbox"><label for="checkbox-v-2a">AM Tweet</label><input name="checkbox-v-2b" id="checkbox-v-2b" type="checkbox"><label for="checkbox-v-2b">PM Tweet</label></fieldset>
+			
+    <h3>#SocEnt</h3><fieldset data-role="controlgroup"><input name="checkbox-v-2a" id="checkbox-v-2a" type="checkbox"><label for="checkbox-v-2a">AM Tweet</label><input name="checkbox-v-2b" id="checkbox-v-2b" type="checkbox"><label for="checkbox-v-2b">PM Tweet</label></fieldset>
+    
+    <h3>#Nonprofit</h3><fieldset data-role="controlgroup"><input name="checkbox-v-2a" id="checkbox-v-2a" type="checkbox"><label for="checkbox-v-2a">AM Tweet</label><input name="checkbox-v-2b" id="checkbox-v-2b" type="checkbox"><label for="checkbox-v-2b">PM Tweet</label></fieldset>
+			
+			
+		<h3>#NPTech</h3><fieldset data-role="controlgroup"><input name="checkbox-v-2a" id="checkbox-v-2a" type="checkbox"><label for="checkbox-v-2a">AM Tweet</label><input name="checkbox-v-2b" id="checkbox-v-2b" type="checkbox"><label for="checkbox-v-2b">PM Tweet</label></fieldset>
+		<h3>#SM4SG or #SM4NP</h3><fieldset data-role="controlgroup"><input name="checkbox-v-2a" id="checkbox-v-2a" type="checkbox"><label for="checkbox-v-2a">AM Tweet</label><input name="checkbox-v-2b" id="checkbox-v-2b" type="checkbox"><label for="checkbox-v-2b">PM Tweet</label></fieldset>
+			-->
+		
+		<div class="ui-grid-a">
+    <div class="ui-block-a"><div class="ui-bar"><h3>#SocialEnterprise</h3><fieldset data-role="controlgroup"><input name="checkbox-v-2a" id="checkbox-v-2a" type="checkbox"><label for="checkbox-v-2a">AM Tweet</label><input name="checkbox-v-2b" id="checkbox-v-2b" type="checkbox"><label for="checkbox-v-2b">PM Tweet</label></fieldset></div></div>
+    <div class="ui-block-b"><div class="ui-bar"><h3>#SocEnt</h3><fieldset data-role="controlgroup"><input name="checkbox-v-2a" id="checkbox-v-2a" type="checkbox"><label for="checkbox-v-2a">AM Tweet</label><input name="checkbox-v-2b" id="checkbox-v-2b" type="checkbox"><label for="checkbox-v-2b">PM Tweet</label></fieldset></div></div>
+    </div><!-- /grid-a -->
+
+		<div class="ui-grid-a">
+    <div class="ui-block-a"><div class="ui-bar"><h3>#Nonprofit</h3><fieldset data-role="controlgroup"><input name="checkbox-v-2a" id="checkbox-v-2a" type="checkbox"><label for="checkbox-v-2a">AM Tweet</label><input name="checkbox-v-2b" id="checkbox-v-2b" type="checkbox"><label for="checkbox-v-2b">PM Tweet</label></fieldset></div></div>
+    <div class="ui-block-b"><div class="ui-bar"><h3>#NPTech</h3><fieldset data-role="controlgroup"><input name="checkbox-v-2a" id="checkbox-v-2a" type="checkbox"><label for="checkbox-v-2a">AM Tweet</label><input name="checkbox-v-2b" id="checkbox-v-2b" type="checkbox"><label for="checkbox-v-2b">PM Tweet</label></fieldset></div></div>
+    </div><!-- /grid-a -->
+    
+    <div class="ui-grid-a">
+    <div class="ui-block-a"><div class="ui-bar"><h3>#SM4SG</h3><fieldset data-role="controlgroup"><input name="checkbox-v-2a" id="checkbox-v-2a" type="checkbox"><label for="checkbox-v-2a">AM Tweet</label><input name="checkbox-v-2b" id="checkbox-v-2b" type="checkbox"><label for="checkbox-v-2b">PM Tweet</label></fieldset></div></div>
+    <div class="ui-block-b"><div class="ui-bar"><h3>Other</h3><fieldset data-role="controlgroup"><input name="checkbox-v-2a" id="checkbox-v-2a" type="checkbox"><label for="checkbox-v-2a">AM Tweet</label><input name="checkbox-v-2b" id="checkbox-v-2b" type="checkbox"><label for="checkbox-v-2b">PM Tweet</label></fieldset></div></div>
+    </div><!-- /grid-a -->
+		
+		
+			
+			
+  <label for="slider-fill-mini">Retweets</label>
+<input name="slider-fill-mini" id="slider-fill-mini" value="0" min="0" max="5" data-mini="true" data-highlight="true" data-theme="b" data-track-theme="d" type="range"> 
+ <label for="textarea">Notes:</label>
+<textarea rows="20" name="textarea" id="textarea"></textarea>
+  
+  </div>
+</div> <!--/page -->
+
+
+
+</body>
+</html>
